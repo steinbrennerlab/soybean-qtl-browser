@@ -390,6 +390,89 @@ input {
   gap: 10px;
 }
 
+.prr-panel {
+  display: grid;
+  gap: 18px;
+  background:
+    linear-gradient(135deg, rgba(228, 239, 232, 0.88) 0%, rgba(255, 253, 247, 0.96) 56%),
+    var(--surface);
+}
+
+.prr-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 320px));
+  gap: 12px;
+}
+
+.prr-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.prr-stat {
+  padding: 15px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(188, 174, 139, 0.6);
+  background: rgba(255, 253, 247, 0.84);
+}
+
+.prr-stat strong,
+.prr-stat span {
+  display: block;
+}
+
+.prr-stat strong {
+  color: var(--accent-strong);
+  font-size: 25px;
+  line-height: 1;
+}
+
+.prr-stat span {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.prr-family-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.prr-family-card {
+  display: grid;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: rgba(255, 253, 247, 0.8);
+}
+
+.prr-family-card.is-active {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.prr-family-card > span:last-child,
+.prr-method-note {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.prr-family-name {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.prr-method-note {
+  margin: 0;
+  line-height: 1.6;
+}
+
 .filter-chip strong {
   font-size: 11px;
   color: var(--accent);
@@ -458,7 +541,7 @@ input {
 
 table {
   width: 100%;
-  min-width: 1880px;
+  min-width: 2120px;
   border-collapse: separate;
   border-spacing: 0;
 }
@@ -557,6 +640,42 @@ td {
 .cell-stack {
   display: grid;
   gap: 6px;
+}
+
+.cell-prr {
+  min-width: 250px;
+}
+
+.prr-hit-stack {
+  display: grid;
+  gap: 5px;
+}
+
+.prr-hit {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  gap: 6px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.prr-xi {
+  color: #174a3d;
+  background: #d8ebe2;
+}
+
+.prr-xii {
+  color: #704410;
+  background: #f7e2b9;
+}
+
+.prr-rlp {
+  color: #54335f;
+  background: #eadcf0;
 }
 
 .cell-caption {
@@ -746,6 +865,74 @@ td {
   gap: 12px;
 }
 
+.prr-detail-section {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid #bdd5c8;
+  background: var(--surface-tint);
+}
+
+.prr-detail-heading,
+.prr-detail-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.prr-detail-heading h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+}
+
+.prr-detail-list {
+  display: grid;
+  gap: 10px;
+}
+
+.prr-detail-card {
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(188, 174, 139, 0.6);
+  background: rgba(255, 253, 247, 0.88);
+}
+
+.prr-detail-card-heading {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.prr-detail-card dl {
+  margin: 12px 0 0;
+  display: grid;
+  gap: 7px;
+}
+
+.prr-detail-card dl > div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+}
+
+.prr-detail-card dt {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.prr-detail-card dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  word-break: break-word;
+}
+
 .detail-highlight-card {
   padding: 14px;
   border-radius: var(--radius-md);
@@ -815,6 +1002,10 @@ td {
   .facet-row {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .prr-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 980px) {
@@ -851,7 +1042,10 @@ td {
 
 @media (max-width: 720px) {
   .summary-grid,
-  .facet-row {
+  .facet-row,
+  .prr-controls,
+  .prr-summary,
+  .prr-family-grid {
     grid-template-columns: 1fr;
   }
 
@@ -868,5 +1062,10 @@ td {
 
   .detail-panel {
     padding: 18px;
+  }
+
+  .prr-detail-heading,
+  .prr-detail-card dl > div {
+    grid-template-columns: 1fr;
   }
 }

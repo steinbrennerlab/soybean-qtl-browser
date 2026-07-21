@@ -136,6 +136,46 @@
         <div class="active-filters" id="activeFilters" aria-live="polite"></div>
       </section>
 
+      <section class="panel prr-panel" aria-labelledby="prrHeading">
+        <div class="panel-heading">
+          <div>
+            <p class="panel-kicker">Wm82 receptor calls</p>
+            <h2 id="prrHeading">PRR family overlaps</h2>
+          </div>
+          <p class="panel-note">
+            QTL coordinates explicitly labeled Wm82.a2 are compared with
+            assembly-mapped a6 PRR calls.
+          </p>
+        </div>
+
+        <div class="prr-controls">
+          <label>
+            <span>PRR family</span>
+            <select id="prrFamilyFilter">
+              <option value="">All QTL rows</option>
+              <option value="ANY">Any PRR family</option>
+              <option value="XI">XI</option>
+              <option value="XII">XII</option>
+              <option value="RLP">RLP</option>
+            </select>
+          </label>
+          <label>
+            <span>Overlap or proximity</span>
+            <select id="prrDistanceFilter">
+              <option value="0">Inside reported coordinate</option>
+              <option value="100000">Within 100 kb</option>
+              <option value="250000">Within 250 kb</option>
+              <option value="500000">Within 500 kb</option>
+              <option value="1000000">Within 1 Mb</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="prr-summary" id="prrSummary" aria-live="polite"></div>
+        <div class="prr-family-grid" id="prrFamilyBreakdown" aria-live="polite"></div>
+        <p class="prr-method-note" id="prrMethodNote"></p>
+      </section>
+
       <section class="table-toolbar" aria-live="polite">
         <div class="toolbar-copy">
           <strong id="visibleCount">0</strong>

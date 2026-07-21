@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+data/tmp*
+data/.curation-staging-*/
+data/.wm82-staging-*/
+browser/.soybean_qtl_browser.html.staging-*
+inputs/download.*.zip

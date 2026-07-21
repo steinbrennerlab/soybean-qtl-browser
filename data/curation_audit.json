@@ -1,0 +1,2695 @@
+{
+  "curation_version": "source-reconstruction-v1",
+  "source": "Lin et al. 2022 paper supplements",
+  "record_count": 1996,
+  "supplement_rows_reconstructed": {
+    "Supplementary Table 1": 134,
+    "Supplementary Table 2": 90,
+    "Supplementary Table 3": 202
+  },
+  "chromosomes_filled_from_legacy_mlg": 130,
+  "field_change_count": 383,
+  "changes": [
+    {
+      "entry_id": "SOYRES-0040",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0046",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0048",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0050",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0052",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0054",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "10",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0057",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "10",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0059",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "11",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0064",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0068",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "15",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0070",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "17",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0110",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0119",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0121",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0123",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0125",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "17",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0160",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "12",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0162",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0173",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "19",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0177",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "2",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0181",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "3",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0349",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "3",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0358",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "4",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0363",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "6",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0378",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "10",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0385",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "12",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0388",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0423",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "15",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0430",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0435",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "17",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0440",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0448",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "19",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0466",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "5",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0470",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0482",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0484",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "1",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0488",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "2",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0491",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "3",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0494",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "4",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0497",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "5",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0501",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "6",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0504",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0517",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0519",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "1",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0523",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "2",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0526",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "3",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0529",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "4",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0532",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "5",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0536",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "6",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0539",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0546",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "10",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0549",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "11",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0554",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0558",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0562",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0565",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "17",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0568",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0570",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "19",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0572",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "20",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0575",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "2",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0577",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0580",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "1",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0582",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "6",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0584",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0586",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "10",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0595",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0597",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "18",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0604",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "20",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0609",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "7",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0611",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0613",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "3",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0617",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "5",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0619",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "11",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0621",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "17",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0623",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "1",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0625",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "2",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0628",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "3",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0630",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "5",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0632",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "6",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0635",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "7",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0637",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0788",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0801",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0812",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "15",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0817",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0884",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "19",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0895",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "20",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0901",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "20",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0916",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "20",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0994",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0996",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "8",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-0998",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "6",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1000",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1002",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1004",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1006",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1008",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1010",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1012",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1014",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1016",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1018",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1020",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1022",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1024",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1027",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1029",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1031",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1033",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1035",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1037",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1039",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "6",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1041",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "10",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1043",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1045",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "14",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1105",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1114",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "15",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1193",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1196",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "15",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1198",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1292",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1299",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1305",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "19",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1308",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "20",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1417",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1421",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1444",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "2",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1481",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "11",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1483",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "13",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1529",
+      "field": "chromosome",
+      "old_value": "",
+      "new_value": "16",
+      "reason": "legacy_mlg_crosswalk"
+    },
+    {
+      "entry_id": "SOYRES-1551",
+      "field": "donor_source",
+      "old_value": "Glyma01g32800 and Glyma01g32855",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1551",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma01g32800 and Glyma01g32855",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1551",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Niu et al. 2018",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1552",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398841",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1552",
+      "field": "source_reference",
+      "old_value": "PI 398841",
+      "new_value": "Lee et al. 2013a",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1553",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398841",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1553",
+      "field": "source_reference",
+      "old_value": "PI 398841",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1554",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398841",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1554",
+      "field": "source_reference",
+      "old_value": "PI 398841",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1555",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398841",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1555",
+      "field": "source_reference",
+      "old_value": "PI 398841",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1556",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398841",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1556",
+      "field": "source_reference",
+      "old_value": "PI 398841",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1557",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1558",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "ZDD01629",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1558",
+      "field": "source_reference",
+      "old_value": "ZDD01629",
+      "new_value": "Sun et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1559",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "ZDD03842",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1559",
+      "field": "source_reference",
+      "old_value": "ZDD03842",
+      "new_value": "Sun et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1560",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Burnham et al. 2003b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1561",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1562",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1563",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1564",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Han et al. 2008",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1565",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "AR2",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1565",
+      "field": "source_reference",
+      "old_value": "AR2",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1566",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "AR2",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1566",
+      "field": "source_reference",
+      "old_value": "AR2",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1567",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1568",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1569",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1570",
+      "field": "donor_source",
+      "old_value": "Glyma03g03480",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1570",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma03g03480",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1570",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Ludke et al. 2019",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1571",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Allele A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1571",
+      "field": "source_reference",
+      "old_value": "Allele A",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1572",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Ludke et al. 2019",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1573",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Ludke et al. 2019",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1574",
+      "field": "donor_source",
+      "old_value": "Glyma03g04960",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1574",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma03g04960",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1574",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1575",
+      "field": "donor_source",
+      "old_value": "Glyma03g04990",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1575",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma03g04990",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1575",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Ludke et al. 2019",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1576",
+      "field": "donor_source",
+      "old_value": "Glyma03g05070",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1576",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma03g05070",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1576",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Ludke et al. 2019",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1577",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1578",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1579",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 399036",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1579",
+      "field": "source_reference",
+      "old_value": "PI 399036",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1580",
+      "field": "donor_source",
+      "old_value": "Glyma03g28660",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1580",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma03g28660",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1580",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1581",
+      "field": "donor_source",
+      "old_value": "Glyma.03G033800 and Glyma.03G033700",
+      "new_value": "DongongL-28",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1581",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma.03G033800 and Glyma.03G033700",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1581",
+      "field": "source_reference",
+      "old_value": "DongongL-28",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1582",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1583",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407861A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1583",
+      "field": "source_reference",
+      "old_value": "PI 407861A",
+      "new_value": "Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1584",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398841",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1584",
+      "field": "source_reference",
+      "old_value": "PI 398841",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1585",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407861A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1585",
+      "field": "source_reference",
+      "old_value": "PI 407861A",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1586",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407861A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1586",
+      "field": "source_reference",
+      "old_value": "PI 407861A",
+      "new_value": "Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1587",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407861A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1587",
+      "field": "source_reference",
+      "old_value": "PI 407861A",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1588",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1589",
+      "field": "donor_source",
+      "old_value": "Glyma04g40800",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1589",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma04g40800",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1589",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1590",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "OX20-8",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1590",
+      "field": "source_reference",
+      "old_value": "OX20-8",
+      "new_value": "Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1591",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "OX20-8",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1591",
+      "field": "source_reference",
+      "old_value": "OX20-8",
+      "new_value": "Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1592",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1593",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1594",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1595",
+      "field": "donor_source",
+      "old_value": "Glyma06g01080",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1595",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma06g01080",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1595",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1596",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Li et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1597",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1598",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1599",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1600",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Allele T",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1600",
+      "field": "source_reference",
+      "old_value": "Allele T",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1601",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1602",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1603",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1604",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1605",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Li et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1606",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1607",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407861A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1607",
+      "field": "source_reference",
+      "old_value": "PI 407861A",
+      "new_value": "Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1608",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398297",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1608",
+      "field": "source_reference",
+      "old_value": "PI 398297",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1609",
+      "field": "donor_source",
+      "old_value": "Glyma09g04310",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1609",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma09g04310",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1609",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1610",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1611",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Conrad",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1611",
+      "field": "source_reference",
+      "old_value": "Conrad",
+      "new_value": "Stasko et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1611",
+      "field": "raw_row_text",
+      "old_value": "MLG K (Chr. 9) | BARC_2.0_Gm09_15487393 | (15,487,393 a2) | Tray test / isolates PT2004C2.S1, 1.S.1.1, OH25 | F9:11 (316) | 4.5-7.4% | - | Conrad | Stasko et al. 2016",
+      "new_value": "MLG K (Chr. 9) |  | BARC_2.0_Gm09_15487393 | (15,487,393 a2) | Tray test / isolates PT2004C2.S1, 1.S.1.1, OH25 | F9:11 (316) | 4.5-7.4% | - | Conrad | Stasko et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1612",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 399036",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1612",
+      "field": "source_reference",
+      "old_value": "PI 399036",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1613",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 399036",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1613",
+      "field": "source_reference",
+      "old_value": "PI 399036",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1614",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1615",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407861A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1615",
+      "field": "source_reference",
+      "old_value": "PI 407861A",
+      "new_value": "Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1616",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1617",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1618",
+      "field": "donor_source",
+      "old_value": "Glyma11g11100",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1618",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma11g11100",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1618",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1619",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1620",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Li et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1621",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1622",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1623",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "OX20-8",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1623",
+      "field": "source_reference",
+      "old_value": "OX20-8",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1624",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "OX20-8",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1624",
+      "field": "source_reference",
+      "old_value": "OX20-8",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1625",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1625",
+      "field": "raw_row_text",
+      "old_value": "MLG H (Chr. 12) | GMH_OSU31 | 37.2-63.4cM | Tray test / isolate 1.S.1.1 | F4:6 (186) | 4.6% | - | - | Wang et al. 2010",
+      "new_value": "MLG H (Chr. 12) |  | GMH_OSU31 | 37.2-63.4cM | Tray test / isolate 1.S.1.1 | F4:6 (186) | 4.6% | - | - | Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1626",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1627",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1628",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1629",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Burnham et al. 2003b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1629",
+      "field": "raw_row_text",
+      "old_value": "MLG F (Chr. 13) | Satt252 (BARCSOYSSR_13_0272, Satt423 (BARCSOYSSR_13_0264), and Satt149 (BARCSOYSSR_13_0245) | (16,454,986 - 16,855,019 a2) | Slant board test / isolate OH25 | F4:6 (66), F4:6 (79), F4:6 (64) | 21.4-35.0% | - | - | Burnham et al. 2003b",
+      "new_value": "MLG F (Chr. 13) |  | Satt252 (BARCSOYSSR_13_0272, Satt423 (BARCSOYSSR_13_0264), and Satt149 (BARCSOYSSR_13_0245) | (16,454,986 - 16,855,019 a2) | Slant board test / isolate OH25 | F4:6 (66), F4:6 (79), F4:6 (64) | 21.4-35.0% | - | - | Burnham et al. 2003b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1630",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1631",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1632",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1632",
+      "field": "raw_row_text",
+      "old_value": "MLG F (Chr. 13) | F424_294 | 15.7 - 24.1cM | Tray test / isolate 1.S.1.1 | F4:6 (186) | 2.0% | - | - | Wang et al. 2010",
+      "new_value": "MLG F (Chr. 13) |  | F424_294 | 15.7 - 24.1cM | Tray test / isolate 1.S.1.1 | F4:6 (186) | 2.0% | - | - | Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1633",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1634",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1634",
+      "field": "raw_row_text",
+      "old_value": "MLG B2 (Chr. 14) | Satt304 (BARCSOYSSR_14_0646) | 22.8 - 31.7cM (13,086,766 a2) | Tray test / isolate 1.S.1.1 | F4:6 (375) | 4.7% | - | - | Wang et al. 2010",
+      "new_value": "MLG B2 (Chr. 14) |  | Satt304 (BARCSOYSSR_14_0646) | 22.8 - 31.7cM (13,086,766 a2) | Tray test / isolate 1.S.1.1 | F4:6 (375) | 4.7% | - | - | Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1635",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Allele C",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1635",
+      "field": "source_reference",
+      "old_value": "Allele C",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1636",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1637",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 427106 and PI 427105B",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1637",
+      "field": "source_reference",
+      "old_value": "PI 427106 and PI 427105B",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1638",
+      "field": "donor_source",
+      "old_value": "Glyma15g01370",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1638",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma15g01370",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1638",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1639",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1640",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Conrad",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1640",
+      "field": "source_reference",
+      "old_value": "Conrad",
+      "new_value": "Stasko et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1640",
+      "field": "raw_row_text",
+      "old_value": "MLG E (Chr. 15) | BARC_2.0_Gm15_3639988 and BARC_2.0_Gm15_3591774 | (3,591,774 - 3,639,988 a2) | Tray test / isolates PT2004C2.S1, 1.S.1.1, OH25 | F9:11 (316) | 2.0% | - | Conrad | Stasko et al. 2016",
+      "new_value": "MLG E (Chr. 15) |  | BARC_2.0_Gm15_3639988 and BARC_2.0_Gm15_3591774 | (3,591,774 - 3,639,988 a2) | Tray test / isolates PT2004C2.S1, 1.S.1.1, OH25 | F9:11 (316) | 2.0% | - | Conrad | Stasko et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1641",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 399036",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1641",
+      "field": "source_reference",
+      "old_value": "PI 399036",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1642",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Allele A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1642",
+      "field": "source_reference",
+      "old_value": "Allele A",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1643",
+      "field": "donor_source",
+      "old_value": "Glyma15g20550",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1643",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma15g20550",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1643",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Ludke et al. 2019",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1644",
+      "field": "donor_source",
+      "old_value": "Glyma15g21130",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1644",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma15g21130",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1644",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Ludke et al. 2019",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1645",
+      "field": "donor_source",
+      "old_value": "Glyma.15G217100",
+      "new_value": "Allele T",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1645",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma.15G217100",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1645",
+      "field": "source_reference",
+      "old_value": "Allele T",
+      "new_value": "de Ronne et al. 2021",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1646",
+      "field": "donor_source",
+      "old_value": "Glyma15g41680",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1646",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma15g41680",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1646",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1647",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Conrad",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1647",
+      "field": "source_reference",
+      "old_value": "Conrad",
+      "new_value": "Stasko et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1648",
+      "field": "donor_source",
+      "old_value": "Glyma16g04700",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1648",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma16g04700",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1648",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1649",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Conrad",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1649",
+      "field": "source_reference",
+      "old_value": "Conrad",
+      "new_value": "Weng et al. 2007",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1650",
+      "field": "donor_source",
+      "old_value": "Glyma16g14080",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1650",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma16g14080",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1650",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1651",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1652",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1653",
+      "field": "donor_source",
+      "old_value": "Glyma16g30140",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1653",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma16g30140",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1653",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1654",
+      "field": "donor_source",
+      "old_value": "Glyma16g31930",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1654",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma16g31930",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1654",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1655",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407162",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1655",
+      "field": "source_reference",
+      "old_value": "PI 407162",
+      "new_value": "Tucker et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1656",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 427105B",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1656",
+      "field": "source_reference",
+      "old_value": "PI 427105B",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1657",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 399036",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1657",
+      "field": "source_reference",
+      "old_value": "PI 399036",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1658",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "ZDD01629",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1658",
+      "field": "source_reference",
+      "old_value": "ZDD01629",
+      "new_value": "Sun et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1659",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Allele A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1659",
+      "field": "source_reference",
+      "old_value": "Allele A",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1660",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Allele T",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1660",
+      "field": "source_reference",
+      "old_value": "Allele T",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1661",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "Allele A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1661",
+      "field": "source_reference",
+      "old_value": "Allele A",
+      "new_value": "Zhao et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1662",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 408105A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1662",
+      "field": "source_reference",
+      "old_value": "PI 408105A",
+      "new_value": "Nguyen et al. 2012",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1662",
+      "field": "raw_row_text",
+      "old_value": "MLG D2 (Chr. 17) | BARC-062213-17705 | 94cM (18,409,823 a1) | Hypocotyl inoculation / isolate OH17, race 2 | F7:8 (188) | 7.5-8.8% | - | PI 408105A | Nguyen et al. 2012",
+      "new_value": "MLG D2 (Chr. 17) |  | BARC-062213-17705 | 94cM (18,409,823 a1) | Hypocotyl inoculation / isolate OH17, race 2 | F7:8 (188) | 7.5-8.8% | - | PI 408105A | Nguyen et al. 2012",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1663",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1663",
+      "field": "raw_row_text",
+      "old_value": "MLG D2 (Chr. 17) | Satt574 (BARCSOYSSR_17_1164) | 25.2 - 39.6cM (31,915,278 a1) | Tray test / isolate 1.S.1.1 | F4:6 (375) | 7.1% | - | - | Wang et al. 2010",
+      "new_value": "MLG D2 (Chr. 17) |  | Satt574 (BARCSOYSSR_17_1164) | 25.2 - 39.6cM (31,915,278 a1) | Tray test / isolate 1.S.1.1 | F4:6 (375) | 7.1% | - | - | Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1664",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1665",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1666",
+      "field": "marker_position",
+      "old_value": "70-81cM (54,810,869 - 57,797,198 a1)",
+      "new_value": "70-81cM(54,810,869 - 57,797,198 a1)",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1666",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407861A",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1666",
+      "field": "source_reference",
+      "old_value": "PI 407861A",
+      "new_value": "Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1666",
+      "field": "raw_row_text",
+      "old_value": "MLG G (Chr. 18) | QTL-18 | BARC-040163-07672 to BARC-041331-07965 | 70-81cM (54,810,869 - 57,797,198 a1) | Tray test / isolate OH25 | F7:8 (157) | 3.5% | - | PI 407861A | Lee et al. 2013b",
+      "new_value": "MLG G (Chr. 18) | QTL-18 | BARC-040163-07672 to BARC-041331-07965 | 70-81cM(54,810,869 - 57,797,198 a1) | Tray test / isolate OH25 | F7:8 (157) | 3.5% | - | PI 407861A | Lee et al. 2013b",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1666",
+      "field": "source_col_04",
+      "old_value": "70-81cM (54,810,869 - 57,797,198 a1)",
+      "new_value": "70-81cM(54,810,869 - 57,797,198 a1)",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1667",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1668",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1669",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 398841",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1669",
+      "field": "source_reference",
+      "old_value": "PI 398841",
+      "new_value": "Lee et al. 2013a",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1670",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 427106 and PI 427105B",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1670",
+      "field": "source_reference",
+      "old_value": "PI 427106 and PI 427105B",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1671",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 407162",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1671",
+      "field": "source_reference",
+      "old_value": "PI 407162",
+      "new_value": "Tucker et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1672",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 427105B",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1672",
+      "field": "source_reference",
+      "old_value": "PI 427105B",
+      "new_value": "Lee et al. 2014",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1673",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1674",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1675",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "PI 399036",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1675",
+      "field": "source_reference",
+      "old_value": "PI 399036",
+      "new_value": "Abeysekara et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1676",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Schneider et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1677",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Schneider et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1678",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Wang et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1679",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1680",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1681",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Rolling et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1682",
+      "field": "donor_source",
+      "old_value": "Glyma20g39240",
+      "new_value": "-",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1682",
+      "field": "candidate_genes",
+      "old_value": "",
+      "new_value": "Glyma20g39240",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1682",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Huang et al. 2016",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1683",
+      "field": "source_reference",
+      "old_value": "-",
+      "new_value": "Van et al. 2020",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1684",
+      "field": "donor_source",
+      "old_value": "-",
+      "new_value": "V71-370",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1684",
+      "field": "source_reference",
+      "old_value": "V71-370",
+      "new_value": "Tucker et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 1"
+    },
+    {
+      "entry_id": "SOYRES-1698",
+      "field": "raw_row_text",
+      "old_value": "Fusarium virguliforme | MLG C2 (Chr. 6) | - | BARC-Satt316 | (48,016,485 a2) | Field test (IL, US) | 9.1% DI | Pyramid | Njiti et al. 2002",
+      "new_value": "Fusarium virguliforme | MLG C2 (Chr. 6) | - | BARC-Satt316 | (48,016,485 a2) | Field test (IL, US) |  | 9.1% DI | Pyramid | Njiti et al. 2002",
+      "reason": "native_docx_reconstruction:Supplementary Table 2"
+    },
+    {
+      "entry_id": "SOYRES-1721",
+      "field": "raw_row_text",
+      "old_value": "Fusarium virguliforme | MLG B1 (Chr. 11) | - | Satt583–Satt415 | (27,790,963 a2) | Field test (IL, US) | - | 37% MNDI | Yuan et al. 2012",
+      "new_value": "Fusarium virguliforme | MLG B1 (Chr. 11) | - | Satt583–Satt415 | (27,790,963 a2) | Field test (IL, US) | - | 37% MNDI |  | Yuan et al. 2012",
+      "reason": "native_docx_reconstruction:Supplementary Table 2"
+    },
+    {
+      "entry_id": "SOYRES-1804",
+      "field": "raw_row_text",
+      "old_value": "MLG C1 (Chr. 4) | - | SATT391 patent | 50.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG C1 (Chr. 4) | - | SATT391 patent | 50.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1825",
+      "field": "raw_row_text",
+      "old_value": "MLG M (Chr. 7) | - | SAG1048 patent | 84.2cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG M (Chr. 7) | - | SAG1048 patent | 84.2cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1852",
+      "field": "raw_row_text",
+      "old_value": "MLG K (Chr. 9) | - | S60222-TB patent | 170.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG K (Chr. 9) | - | S60222-TB patent | 170.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1860",
+      "field": "raw_row_text",
+      "old_value": "MLG O (Chr. 10) | - | SATT243 patent | 157.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG O (Chr. 10) | - | SATT243 patent | 157.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1869",
+      "field": "raw_row_text",
+      "old_value": "MLG B1 (Chr. 11) | - | SAG1032 patent | 65.6cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG B1 (Chr. 11) | - | SAG1032 patent | 65.6cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1870",
+      "field": "raw_row_text",
+      "old_value": "MLG B1 (Chr. 11) | - | SATT597 patent | 68.1cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG B1 (Chr. 11) | - | SATT597 patent | 68.1cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1871",
+      "field": "raw_row_text",
+      "old_value": "MLG B1 (Chr. 11) | - | SCT_026 patent | 71.6cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG B1 (Chr. 11) | - | SCT_026 patent | 71.6cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1884",
+      "field": "raw_row_text",
+      "old_value": "MLG F (Chr. 13) | - | S60817-TB patent | 30.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG F (Chr. 13) | - | S60817-TB patent | 30.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1941",
+      "field": "raw_row_text",
+      "old_value": "MLG G (Chr. 18) | - | S60239-TB patent | 0.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG G (Chr. 18) | - | S60239-TB patent | 0.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1942",
+      "field": "raw_row_text",
+      "old_value": "MLG G (Chr. 18) | - | P10646A-1 patent | 2.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG G (Chr. 18) | - | P10646A-1 patent | 2.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1943",
+      "field": "raw_row_text",
+      "old_value": "MLG G (Chr. 18) | - | P7659A-2 patent | 4.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG G (Chr. 18) | - | P7659A-2 patent | 4.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1945",
+      "field": "raw_row_text",
+      "old_value": "MLG G (Chr. 18) | - | SATT570 patent | 7.7cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG G (Chr. 18) | - | SATT570 patent | 7.7cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1946",
+      "field": "raw_row_text",
+      "old_value": "MLG G (Chr. 18) | - | SATT356 patent | 8.5cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG G (Chr. 18) | - | SATT356 patent | 8.5cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1965",
+      "field": "raw_row_text",
+      "old_value": "MLG L (Chr. 19) | - | SATT166 patent | 77.1cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG L (Chr. 19) | - | SATT166 patent | 77.1cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    },
+    {
+      "entry_id": "SOYRES-1966",
+      "field": "raw_row_text",
+      "old_value": "MLG L (Chr. 19) | - | SATT448 patent | 78.0cM | - | - | - | Sebastian et al. 2010",
+      "new_value": "MLG L (Chr. 19) | - | SATT448 patent | 78.0cM | - |  | - | - | Sebastian et al. 2010",
+      "reason": "native_docx_reconstruction:Supplementary Table 3"
+    }
+  ]
+}

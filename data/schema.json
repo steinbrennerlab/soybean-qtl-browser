@@ -46,11 +46,11 @@
     },
     "MLG_chr": {
       "type": "string",
-      "description": "Original maturity/linkage group and chromosome text as reported or parsed."
+      "description": "Original molecular linkage group and chromosome text as reported or parsed."
     },
     "chromosome": {
       "type": "string",
-      "description": "Parsed chromosome number when available."
+      "description": "Parsed chromosome number from 1 through 20; values may be taken directly from the source or deterministically assigned from an explicit legacy MLG."
     },
     "linked_flanking_markers": {
       "type": "string",

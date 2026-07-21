@@ -444,83 +444,83 @@
     "chromosome": [
       {
         "value": "14",
-        "count": 44
+        "count": 67
       },
       {
         "value": "18",
-        "count": 42
-      },
-      {
-        "value": "3",
-        "count": 38
-      },
-      {
-        "value": "8",
-        "count": 33
+        "count": 51
       },
       {
         "value": "13",
-        "count": 33
+        "count": 46
+      },
+      {
+        "value": "3",
+        "count": 44
+      },
+      {
+        "value": "8",
+        "count": 43
       },
       {
         "value": "19",
-        "count": 33
-      },
-      {
-        "value": "2",
-        "count": 31
+        "count": 38
       },
       {
         "value": "16",
-        "count": 28
+        "count": 37
+      },
+      {
+        "value": "2",
+        "count": 37
       },
       {
         "value": "17",
-        "count": 28
+        "count": 33
+      },
+      {
+        "value": "15",
+        "count": 32
+      },
+      {
+        "value": "6",
+        "count": 32
+      },
+      {
+        "value": "11",
+        "count": 29
       },
       {
         "value": "9",
         "count": 28
       },
       {
-        "value": "15",
-        "count": 27
-      },
-      {
-        "value": "11",
-        "count": 25
-      },
-      {
-        "value": "6",
-        "count": 25
+        "value": "10",
+        "count": 26
       },
       {
         "value": "7",
-        "count": 23
+        "count": 25
       },
       {
         "value": "1",
-        "count": 21
-      },
-      {
-        "value": "10",
-        "count": 20
+        "count": 25
       },
       {
         "value": "20",
-        "count": 19
-      },
-      {
-        "value": "4",
-        "count": 18
+        "count": 25
       },
       {
         "value": "5",
-        "count": 18
+        "count": 23
+      },
+      {
+        "value": "4",
+        "count": 21
       },
       {
         "value": "12",
-        "count": 15
+        "count": 17
       }
     ],
     "assembly_or_coordinate_system": [
@@ -543,5 +543,13 @@
     "The gall midge row is intentionally retained and flagged as preliminary GWAS / grey literature.",
     "source_col_01 through source_col_14 preserve raw table columns for auditability.",
     "Gmax2.0 should be treated as the preferred coordinate system, but some rows retain older or source-specific coordinates when Gmax2.0 was unavailable."
+  ],
+  "curation_version": "source-reconstruction-v1",
+  "curation_audit": "data/curation_audit.json",
+  "curation_notes": [
+    "All three Lin et al. supplementary tables were reconstructed from native DOCX cells with vertical merges resolved.",
+    "Supplementary Table 1 candidate gene, donor, and reference fields were remapped to their source columns.",
+    "Blank chromosome values were filled only when an explicit legacy MLG crosswalk was unambiguous.",
+    "Main-paper PDF table records remain source-derived and require conceptual row reconstruction."
   ]
 }

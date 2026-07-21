@@ -1,0 +1,89 @@
+{
+  "source_archive": "inputs\\download.20260721.150000.zip",
+  "assemblies": {
+    "a2": {
+      "label": "Wm82.a2.v1",
+      "gene_count": 56044,
+      "gff_member": "Phytozome/PhytozomeV10/Gmax/annotation/Gmax_275_Wm82.a2.v1.gene.gff3.gz"
+    },
+    "a4": {
+      "label": "Wm82.a4.v1",
+      "gene_count": 52872,
+      "gff_member": "Phytozome/PhytozomeV13/Gmax/Wm82.a4.v1/annotation/Gmax_508_Wm82.a4.v1.gene.gff3.gz"
+    },
+    "a6": {
+      "label": "Wm82.a6.v1",
+      "gene_count": 48387,
+      "gff_member": "Phytozome/PhytozomeV14/Gmax/Wm82.a6.v1/annotation/Gmax_880_Wm82.a6.v1.gene.gff3.gz"
+    }
+  },
+  "total_gene_calls": 157303,
+  "prr_gene_count": 240,
+  "prr_family_counts": {
+    "RLP": 81,
+    "XI": 129,
+    "XII": 30
+  },
+  "prr_a2_mapping_counts": {
+    "annotation_ancestor_chain": 3,
+    "exact_stable_id": 202,
+    "unmapped_to_a2": 35
+  },
+  "qtl_a2_coordinate_count": 339,
+  "qtl_coordinate_type_counts": {
+    "reported_interval": 73,
+    "reported_marker": 266
+  },
+  "overlap_threshold_summaries": {
+    "0": {
+      "overlap_pair_count": 45,
+      "qtl_count": 8,
+      "prr_gene_count": 45,
+      "family_pair_counts": {
+        "RLP": 31,
+        "XI": 13,
+        "XII": 1
+      }
+    },
+    "100000": {
+      "overlap_pair_count": 80,
+      "qtl_count": 32,
+      "prr_gene_count": 76,
+      "family_pair_counts": {
+        "RLP": 40,
+        "XI": 33,
+        "XII": 7
+      }
+    },
+    "250000": {
+      "overlap_pair_count": 135,
+      "qtl_count": 58,
+      "prr_gene_count": 103,
+      "family_pair_counts": {
+        "RLP": 53,
+        "XI": 64,
+        "XII": 18
+      }
+    },
+    "500000": {
+      "overlap_pair_count": 187,
+      "qtl_count": 81,
+      "prr_gene_count": 118,
+      "family_pair_counts": {
+        "RLP": 71,
+        "XI": 92,
+        "XII": 24
+      }
+    },
+    "1000000": {
+      "overlap_pair_count": 282,
+      "qtl_count": 121,
+      "prr_gene_count": 134,
+      "family_pair_counts": {
+        "RLP": 97,
+        "XI": 153,
+        "XII": 32
+      }
+    }
+  }
+}

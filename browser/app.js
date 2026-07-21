@@ -1,9 +1,13 @@
 const DATA_URL = "../data/soybean_resistance_qtl_collation.json";
 const MANIFEST_URL = "../data/manifest.json";
 const SCHEMA_URL = "../data/schema.json";
+const PRR_URL = "../data/prr_gene_calls.json";
+const PRR_OVERLAPS_URL = "../data/qtl_prr_overlaps.json";
+const GENE_MANIFEST_URL = "../data/wm82_gene_manifest.json";
 const EMBEDDED_DATA = globalThis.SOYBEAN_QTL_BROWSER_DATA || null;
 
 const DEFAULT_SORT = { field: "entry_id", direction: "asc" };
+const PRR_VIRTUAL_FIELD = "prr_hits";
 const FALLBACK_COLUMNS = [
   "entry_id",
   "target_group",
@@ -78,6 +82,10 @@ const state = {
   fieldOrder: [],
   fieldDescriptions: {},
   manifest: null,
+  geneManifest: null,
+  prrCatalog: [],
+  prrByGene: new Map(),
+  prrByEntry: new Map(),
   defaultColumns: [...FALLBACK_COLUMNS],
   sort: { ...DEFAULT_SORT },
   selectedRowIndex: null
@@ -104,6 +112,11 @@ function cacheElements() {
     "sourceCategoryFilter",
     "evidenceFilter",
     "qualityFilter",
+    "prrFamilyFilter",
+    "prrDistanceFilter",
+    "prrSummary",
+    "prrFamilyBreakdown",
+    "prrMethodNote",
     "activeFilters",
     "visibleCount",
     "resultSummary",
@@ -128,12 +141,22 @@ function cacheElements() {
 }
 
 async function init() {
-  const [rows, manifest, schema] = EMBEDDED_DATA
-    ? [EMBEDDED_DATA.rows, EMBEDDED_DATA.manifest, EMBEDDED_DATA.schema]
+  const [rows, manifest, schema, prrData, prrOverlapData, geneManifest] = EMBEDDED_DATA
+    ? [
+        EMBEDDED_DATA.rows,
+        EMBEDDED_DATA.manifest,
+        EMBEDDED_DATA.schema,
+        EMBEDDED_DATA.prr,
+        EMBEDDED_DATA.qtlPrrOverlaps,
+        EMBEDDED_DATA.geneManifest
+      ]
     : await Promise.all([
         fetchJson(DATA_URL),
         fetchJson(MANIFEST_URL).catch(() => null),
-        fetchJson(SCHEMA_URL).catch(() => null)
+        fetchJson(SCHEMA_URL).catch(() => null),
+        fetchJson(PRR_URL).catch(() => null),
+        fetchJson(PRR_OVERLAPS_URL).catch(() => null),
+        fetchJson(GENE_MANIFEST_URL).catch(() => null)
       ]);
 
   if (!Array.isArray(rows) || rows.length === 0) {
@@ -141,9 +164,12 @@ async function init() {
   }
 
   state.manifest = manifest;
+  state.geneManifest = geneManifest;
   state.fieldOrder = getFieldOrder(schema, rows[0]);
   state.fieldDescriptions = getFieldDescriptions(schema);
   state.defaultColumns = getDefaultColumns(manifest, state.fieldOrder);
+  addPrrVirtualColumn();
+  initializePrrData(prrData, prrOverlapData);
   state.rows = decorateRows(rows);
 
   populateAllFacets();
@@ -155,6 +181,8 @@ async function init() {
 
 function bindEvents() {
   elements.searchInput.addEventListener("input", refreshView);
+  elements.prrFamilyFilter.addEventListener("change", refreshView);
+  elements.prrDistanceFilter.addEventListener("change", refreshView);
 
   for (const { id } of FILTER_CONFIG) {
     elements[id].addEventListener("change", refreshView);
@@ -230,6 +258,26 @@ function getDefaultColumns(manifest, fieldOrder) {
   return source.filter(field => fieldOrder.includes(field));
 }
 
+function addPrrVirtualColumn() {
+  const markerIndex = state.defaultColumns.indexOf("marker_position");
+  const insertionIndex = markerIndex >= 0 ? markerIndex + 1 : state.defaultColumns.length;
+  state.defaultColumns.splice(insertionIndex, 0, PRR_VIRTUAL_FIELD);
+  state.fieldDescriptions[PRR_VIRTUAL_FIELD] =
+    "PRR genes whose mapped Wm82.a2 coordinates overlap or fall within the selected distance of the reported QTL coordinate.";
+}
+
+function initializePrrData(prrData, overlapData) {
+  state.prrCatalog = Array.isArray(prrData?.genes) ? prrData.genes : [];
+  state.prrByGene = new Map(state.prrCatalog.map(item => [item.gene_id_a6, item]));
+  state.prrByEntry = new Map();
+  for (const overlap of overlapData?.overlaps || []) {
+    if (!state.prrByEntry.has(overlap.entry_id)) {
+      state.prrByEntry.set(overlap.entry_id, []);
+    }
+    state.prrByEntry.get(overlap.entry_id).push(overlap);
+  }
+}
+
 function decorateRows(rows) {
   return rows.map((row, index) => {
     const searchText = Object.values(row).map(value => normalizeSearch(value)).join(" ");
@@ -240,7 +288,8 @@ function decorateRows(rows) {
       __index: index,
       __searchText: searchText,
       __manualReview: manualReview,
-      __preliminary: preliminary
+      __preliminary: preliminary,
+      __prrHits: state.prrByEntry.get(row.entry_id) || []
     };
   });
 }
@@ -255,9 +304,11 @@ function renderDatasetMeta() {
   const chips = [
     `${formatCount(state.rows.length)} rows`,
     `${formatCount(state.fieldOrder.length)} fields`,
+    state.geneManifest ? `${formatCount(state.geneManifest.total_gene_calls)} Wm82 gene calls` : "",
+    state.prrCatalog.length ? `${formatCount(state.prrCatalog.length)} a6 PRRs` : "",
     "Primary key: entry_id",
     "Static browser"
-  ];
+  ].filter(Boolean);
 
   elements.datasetMeta.innerHTML = chips
     .map(label => `<span class="meta-chip">${escapeHtml(label)}</span>`)
@@ -364,19 +415,30 @@ function applyUrlState() {
   if (sortDirection === "desc") {
     state.sort.direction = "desc";
   }
+
+  const prrFamily = params.get("prr_family");
+  const prrDistance = params.get("prr_distance");
+  if ([...elements.prrFamilyFilter.options].some(option => option.value === prrFamily)) {
+    elements.prrFamilyFilter.value = prrFamily;
+  }
+  if ([...elements.prrDistanceFilter.options].some(option => option.value === prrDistance)) {
+    elements.prrDistanceFilter.value = prrDistance;
+  }
 }
 
 function refreshView() {
   state.visibleRows = sortRows(getFilteredRows());
   renderActiveFilters();
   renderDashboardBreakdowns();
+  renderPrrPanel();
   renderToolbar();
   renderTable();
   updateUrlState();
 }
 
-function getFilteredRows() {
+function getFilteredRows(ignorePrrFilter = false) {
   const query = normalizeSearch(elements.searchInput.value.trim());
+  const selectedFamily = elements.prrFamilyFilter.value;
 
   return state.rows.filter(row => {
     for (const { field, id } of FILTER_CONFIG) {
@@ -384,6 +446,10 @@ function getFilteredRows() {
       if (selected && text(row[field]).trim() !== selected) {
         return false;
       }
+    }
+
+    if (!ignorePrrFilter && selectedFamily && getPrrHits(row, selectedFamily).length === 0) {
+      return false;
     }
 
     if (!query) {
@@ -399,7 +465,9 @@ function sortRows(rows) {
   const multiplier = direction === "asc" ? 1 : -1;
 
   return [...rows].sort((left, right) => {
-    const comparison = compareValues(left[field], right[field]);
+    const leftValue = field === PRR_VIRTUAL_FIELD ? getPrrHits(left).length : left[field];
+    const rightValue = field === PRR_VIRTUAL_FIELD ? getPrrHits(right).length : right[field];
+    const comparison = compareValues(leftValue, rightValue);
     if (comparison !== 0) {
       return comparison * multiplier;
     }
@@ -441,6 +509,14 @@ function renderActiveFilters() {
     );
   }
 
+  const prrFamily = elements.prrFamilyFilter.value;
+  if (prrFamily) {
+    chips.push(
+      `<span class="filter-chip"><strong>PRR family</strong>${escapeHtml(prrFamily === "ANY" ? "Any" : prrFamily)}</span>`,
+      `<span class="filter-chip"><strong>PRR distance</strong>${escapeHtml(getPrrDistanceLabel())}</span>`
+    );
+  }
+
   if (chips.length === 0) {
     chips.push('<span class="meta-chip">No filters applied. Showing the full dataset.</span>');
   }
@@ -474,6 +550,78 @@ function renderDashboardBreakdowns() {
     getCountEntries(rowsForBreakdowns, "disease_or_pest", { limit: 15 }),
     { emptyLabel: "No rows match the current search or filters." }
   );
+}
+
+function getPrrDistance() {
+  return Number(elements.prrDistanceFilter.value || 0);
+}
+
+function getPrrDistanceLabel() {
+  const option = elements.prrDistanceFilter.selectedOptions[0];
+  return option ? option.textContent : "Inside reported coordinate";
+}
+
+function getPrrHits(row, family = "") {
+  const threshold = getPrrDistance();
+  return (row.__prrHits || []).filter(hit => {
+    if (hit.distance_bp > threshold) {
+      return false;
+    }
+    return !family || family === "ANY" || hit.family === family;
+  });
+}
+
+function renderPrrPanel() {
+  if (state.prrCatalog.length === 0) {
+    elements.prrSummary.innerHTML = '<div class="empty-state">PRR gene calls are not available.</div>';
+    elements.prrFamilyBreakdown.innerHTML = "";
+    elements.prrMethodNote.textContent = "";
+    return;
+  }
+
+  const baseRows = getFilteredRows(true);
+  const selectedFamily = elements.prrFamilyFilter.value;
+  const allHits = baseRows.flatMap(row => getPrrHits(row));
+  const selectedHits = selectedFamily
+    ? baseRows.flatMap(row => getPrrHits(row, selectedFamily))
+    : allHits;
+  const selectedQtlCount = new Set(selectedHits.map(hit => hit.entry_id)).size;
+  const selectedGeneCount = new Set(selectedHits.map(hit => hit.gene_id_a6)).size;
+  const mappedCount = state.prrCatalog.filter(item => item.mapped_a2_call).length;
+  const selectedLabel = selectedFamily
+    ? (selectedFamily === "ANY" ? "Any family" : selectedFamily)
+    : "All families";
+
+  elements.prrSummary.innerHTML = [
+    { value: selectedQtlCount, label: `${selectedLabel} QTLs` },
+    { value: selectedGeneCount, label: "Distinct PRR hits" },
+    { value: selectedHits.length, label: "QTL–gene pairs" },
+    { value: mappedCount, label: "a6 PRRs mapped to a2" }
+  ].map(item => `
+    <div class="prr-stat">
+      <strong>${escapeHtml(formatCount(item.value))}</strong>
+      <span>${escapeHtml(item.label)}</span>
+    </div>
+  `).join("");
+
+  elements.prrFamilyBreakdown.innerHTML = ["XI", "XII", "RLP"].map(family => {
+    const hits = baseRows.flatMap(row => getPrrHits(row, family));
+    const qtls = new Set(hits.map(hit => hit.entry_id)).size;
+    const genes = new Set(hits.map(hit => hit.gene_id_a6)).size;
+    const active = selectedFamily === family;
+    return `
+      <article class="prr-family-card ${active ? "is-active" : ""}">
+        <span class="prr-family-name">${escapeHtml(family)}</span>
+        <strong>${escapeHtml(formatCount(qtls))} QTLs</strong>
+        <span>${escapeHtml(formatCount(genes))} genes · ${escapeHtml(formatCount(hits.length))} pairs</span>
+      </article>
+    `;
+  }).join("");
+
+  const totalGenes = state.geneManifest?.total_gene_calls || 0;
+  elements.prrMethodNote.textContent =
+    `${getPrrDistanceLabel()}. ${formatCount(totalGenes)} Wm82 gene calls across a2, a4, and a6; ` +
+    `${formatCount(state.prrCatalog.length)} a6 PRRs supplied, ${formatCount(mappedCount)} mapped to a2 without coordinate guessing.`;
 }
 
 function renderBreakdownList(container, entries, { emptyLabel }) {
@@ -577,6 +725,10 @@ function renderTableHead() {
 }
 
 function getCellClass(field) {
+  if (field === PRR_VIRTUAL_FIELD) {
+    return "cell-prr";
+  }
+
   if (field === "evidence_status" || field === "row_quality_flag") {
     return "cell-wrap";
   }
@@ -589,6 +741,10 @@ function getCellClass(field) {
 }
 
 function renderCell(field, row) {
+  if (field === PRR_VIRTUAL_FIELD) {
+    return renderPrrCell(row);
+  }
+
   const value = text(row[field]).trim();
 
   if (field === "entry_id") {
@@ -612,6 +768,40 @@ function renderCell(field, row) {
   }
 
   return `<span class="cell-text" title="${escapeHtml(value)}">${escapeHtml(value)}</span>`;
+}
+
+function renderPrrCell(row) {
+  const selectedFamily = elements.prrFamilyFilter.value;
+  const hits = getPrrHits(row, selectedFamily);
+  if (hits.length === 0) {
+    return '<span class="cell-text" title="No PRR hit at the selected distance"></span>';
+  }
+  const visible = hits.slice(0, 4);
+  const remainder = hits.length - visible.length;
+  return `
+    <div class="prr-hit-stack">
+      ${visible.map(hit => `
+        <span class="prr-hit prr-${escapeHtml(hit.family.toLowerCase())}" title="${escapeHtml(formatPrrRelationship(hit))}">
+          <strong>${escapeHtml(hit.family)}</strong> ${escapeHtml(hit.gene_id_a6)}
+        </span>
+      `).join("")}
+      ${remainder > 0 ? `<span class="cell-caption">+${escapeHtml(formatCount(remainder))} more</span>` : ""}
+    </div>
+  `;
+}
+
+function formatPrrRelationship(hit) {
+  if (hit.distance_bp === 0) {
+    return `Overlaps reported ${hit.qtl_coordinate_type === "reported_interval" ? "QTL interval" : "marker coordinate"}`;
+  }
+  return `${formatDistance(hit.distance_bp)} from reported coordinate`;
+}
+
+function formatDistance(distanceBp) {
+  if (distanceBp >= 1_000_000) {
+    return `${(distanceBp / 1_000_000).toFixed(2)} Mb`;
+  }
+  return `${Math.round(distanceBp / 1_000)} kb`;
 }
 
 function renderEvidenceCell(row) {
@@ -752,6 +942,7 @@ function renderDetail(row) {
       <h2 class="detail-title">${escapeHtml(title)}</h2>
       <div class="detail-meta">${escapeHtml(metaParts.join(" | "))}</div>
       ${callouts.length ? `<div class="callout-stack">${callouts.join("")}</div>` : ""}
+      ${renderPrrDetail(row)}
       <div class="detail-highlight-grid">
         ${DETAIL_HIGHLIGHT_FIELDS.map(field => `
           <div class="detail-highlight-card">
@@ -769,6 +960,46 @@ function renderDetail(row) {
             <div class="record-value">${renderDetailValue(field, row[field])}</div>
           </div>
         `).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderPrrDetail(row) {
+  const selectedFamily = elements.prrFamilyFilter.value;
+  const hits = getPrrHits(row, selectedFamily);
+  if (hits.length === 0) {
+    return "";
+  }
+  return `
+    <section class="prr-detail-section">
+      <div class="prr-detail-heading">
+        <div>
+          <p class="panel-kicker">Assembly-aware candidate genes</p>
+          <h3>PRR hits at ${escapeHtml(getPrrDistanceLabel().toLowerCase())}</h3>
+        </div>
+        <span class="meta-chip">${escapeHtml(formatCount(hits.length))} QTL–gene pairs</span>
+      </div>
+      <div class="prr-detail-list">
+        ${hits.map(hit => {
+          const catalog = state.prrByGene.get(hit.gene_id_a6);
+          const a6 = catalog?.assembly_calls?.a6;
+          return `
+            <article class="prr-detail-card">
+              <div class="prr-detail-card-heading">
+                <span class="prr-hit prr-${escapeHtml(hit.family.toLowerCase())}"><strong>${escapeHtml(hit.family)}</strong></span>
+                <strong>${escapeHtml(hit.gene_id_a6)}</strong>
+              </div>
+              <dl>
+                <div><dt>Relationship</dt><dd>${escapeHtml(formatPrrRelationship(hit))}</dd></div>
+                <div><dt>Reported QTL coordinate</dt><dd>${escapeHtml(hit.source_coordinate)}</dd></div>
+                <div><dt>Mapped a2 call</dt><dd>${escapeHtml(hit.mapped_a2_gene_id)} · Chr ${escapeHtml(hit.chromosome)}:${escapeHtml(formatCount(hit.gene_start))}–${escapeHtml(formatCount(hit.gene_end))}</dd></div>
+                <div><dt>a6 call</dt><dd>${a6 ? `Chr ${escapeHtml(a6.chromosome)}:${escapeHtml(formatCount(a6.start))}–${escapeHtml(formatCount(a6.end))}` : "Not available"}</dd></div>
+                <div><dt>Mapping</dt><dd>${escapeHtml(humanizeField(hit.a2_mapping_method))}</dd></div>
+              </dl>
+            </article>
+          `;
+        }).join("")}
       </div>
     </section>
   `;
@@ -800,12 +1031,29 @@ function downloadVisibleCsv() {
 }
 
 function toCsv(rows) {
-  const fields = state.fieldOrder;
+  const derivedFields = state.prrCatalog.length
+    ? ["prr_hit_families", "prr_hit_genes_a6", "prr_hit_details"]
+    : [];
+  const fields = [...state.fieldOrder, ...derivedFields];
   const lines = [
     fields.join(","),
-    ...rows.map(row => fields.map(field => csvEscape(row[field])).join(","))
+    ...rows.map(row => fields.map(field => csvEscape(getCsvValue(row, field))).join(","))
   ];
   return lines.join("\n");
+}
+
+function getCsvValue(row, field) {
+  if (!field.startsWith("prr_hit_")) {
+    return row[field];
+  }
+  const hits = getPrrHits(row, elements.prrFamilyFilter.value);
+  if (field === "prr_hit_families") {
+    return [...new Set(hits.map(hit => hit.family))].join("; ");
+  }
+  if (field === "prr_hit_genes_a6") {
+    return hits.map(hit => hit.gene_id_a6).join("; ");
+  }
+  return hits.map(hit => `${hit.gene_id_a6} (${formatPrrRelationship(hit)})`).join("; ");
 }
 
 function csvEscape(value) {
@@ -818,6 +1066,8 @@ function resetFilters() {
   for (const { id } of FILTER_CONFIG) {
     elements[id].value = "";
   }
+  elements.prrFamilyFilter.value = "";
+  elements.prrDistanceFilter.value = "0";
 
   state.sort = { ...DEFAULT_SORT };
   closeDetail();
@@ -837,6 +1087,13 @@ function updateUrlState() {
     if (value) {
       params.set(field, value);
     }
+  }
+
+  if (elements.prrFamilyFilter.value) {
+    params.set("prr_family", elements.prrFamilyFilter.value);
+  }
+  if (elements.prrDistanceFilter.value !== "0") {
+    params.set("prr_distance", elements.prrDistanceFilter.value);
   }
 
   if (state.sort.field !== DEFAULT_SORT.field || state.sort.direction !== DEFAULT_SORT.direction) {
@@ -921,7 +1178,10 @@ function hasActiveCriteria() {
     return true;
   }
 
-  return FILTER_CONFIG.some(({ id }) => elements[id].value);
+  return (
+    FILTER_CONFIG.some(({ id }) => elements[id].value) ||
+    Boolean(elements.prrFamilyFilter.value)
+  );
 }
 
 function isManualReview(row) {
