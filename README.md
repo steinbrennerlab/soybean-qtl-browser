@@ -46,6 +46,99 @@ Key files:
   documentation and validation metadata.
 - `reports/lin_source_review.md` — review of the Lin paper and supplements.
 
+## How the dataset was created from Lin et al.
+
+The principal source is [Lin et al. (2022), *Breeding for disease resistance
+in soybean: a global perspective*](https://doi.org/10.1007/s00122-022-04101-3).
+The review describes more than 800 resistance loci or alleles for 28 soybean
+diseases and consolidates their markers, mapping populations, effects, donor
+sources, candidate genes, and references across its main and supplementary
+tables.
+
+The repository retains the source PDF and three supplementary Word documents
+under `inputs/Lin_paper/`. Lin-derived material accounts for 1,976 of the 1,996
+browser records:
+
+| Source category | Records | How it was handled |
+|---|---:|---|
+| Review main tables | 1,512 | Extracted from the paper's vector PDF and retained with raw text and quality flags |
+| Review supplementary tables | 426 | Reconstructed directly from native DOCX table cells |
+| Review disease-scope rows | 38 | Retained as overview/context records rather than mapped loci |
+| Additional herbivore/insect source | 20 | Added separately; not attributed to the Lin disease review |
+
+### 1. Normalize the review into a common row schema
+
+The heterogeneous source tables were mapped into 40 string-valued fields. The
+common fields include disease or pest, causal agent, locus or allele, linkage
+group and chromosome, markers and positions, resistance phenotype, mapping
+population, phenotypic variance or effect, candidate genes, donor source, and
+the cited reference. Values such as positions and effects remain strings
+because the paper mixes base-pair intervals, centimorgan positions, percentages,
+free text, and source-specific notation.
+
+Each record receives a stable `SOYRES-####` identifier. The original extracted
+row is retained in `raw_row_text`, and `source_col_01` through `source_col_14`
+preserve the source columns. These fields make it possible to audit the
+normalized values without treating the browser display as a replacement for
+the publication.
+
+### 2. Reconstruct the supplementary Word tables from OOXML
+
+The three supplementary files contain native Word tables, so
+`scripts/rebuild_curated_data.py` reads their OOXML cells directly instead of
+extracting rendered text. It resolves vertical cell merges, skips the one
+intentional blank separator row, and applies a separate column map to each
+table:
+
+| Lin supplement | Repository file | Rows | Source columns |
+|---|---|---:|---:|
+| Supplementary Table 1 | `122_2022_4101_MOESM2_ESM.docx` | 134 | 10 |
+| Supplementary Table 2 | `122_2022_4101_MOESM3_ESM.docx` | 90 | 10 |
+| Supplementary Table 3 | `122_2022_4101_MOESM1_ESM.docx` | 202 | 9 |
+
+This reconstruction corrected a systematic column shift in all 134
+Supplementary Table 1 records. Candidate-gene, donor, and reference values now
+come from their intended cells; 21 of those records contain a named candidate
+gene.
+
+### 3. Standardize chromosome labels conservatively
+
+The review uses both numeric chromosomes and historical soybean molecular
+linkage-group labels. The rebuild fills a blank numeric chromosome only when
+the MLG has an unambiguous standard crosswalk (`D1a` to chromosome 1 through
+`I` to chromosome 20). This supplied 130 previously blank chromosome values.
+The source MLG text remains unchanged in `MLG_chr`, and coordinates are never
+silently translated between genome assemblies.
+
+### 4. Preserve uncertainty in the main-paper PDF tables
+
+The main-paper tables have a vector text layer, but many are rotated, wrap one
+biological record across multiple printed lines, or continue across pages. The
+canonical dataset therefore retains extraction warnings rather than pretending
+all row boundaries are certain:
+
+- `ok_extracted` identifies uncomplicated extracted rows;
+- `multi_line_extraction` identifies records assembled from multiple lines;
+- `sparse_or_continuation` marks rows that may be fragments or continuations.
+
+`scripts/extract_lin_pdf_tables.py` provides a coordinate-aware prototype for
+Table 5. It uses the printed header positions as column boundaries and groups
+wrapped/page-leading lines into 139 provisional record blocks. That prototype
+is intentionally stored in `reports/lin_table5_extraction_prototype.json` and
+has **not** replaced the 299 canonical Table 5 rows; the remaining row-boundary
+decisions require visual checking against the rendered paper.
+
+### 5. Regenerate mirrors and audit every deterministic repair
+
+The rebuild writes a staging set, validates it, and only then replaces the CSV,
+JSON, JSONL, schema, manifest, and field dictionaries. Deterministic source
+repairs are recorded field by field in `data/curation_audit.json`.
+`scripts/validate_data.py` checks record IDs, field order, cross-format equality,
+source-table row counts, supplement mappings, MLG/chromosome mappings, and the
+repaired Supplementary Table 1 columns. The review's underlying primary studies
+have not been independently revalidated; the corresponding evidence-status
+field explicitly describes the records as reported by the review.
+
 ## Coordinate policy
 
 QTL coordinates are compared with genes only when the source explicitly labels
