@@ -4,6 +4,8 @@ A self-contained browser for exploring 1,996 published soybean disease- and
 pest-resistance QTL, loci, and GWAS records, with assembly-aware overlaps to
 Wm82 pattern-recognition receptor (PRR) gene calls.
 
+**[Open the live Soybean Resistance QTL Browser](https://steinbrennerlab.org/soybean-qtl-browser/browser/soybean_qtl_browser.html)**
+
 ## Launch it
 
 No installation or web server is required. Download or clone the repository,
