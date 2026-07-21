@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Soybean resistance QTL/locus collation row",
+  "type": "object",
+  "required": [
+    "entry_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "entry_id": {
+      "type": "string",
+      "description": "Stable row identifier assigned during collation. Use as the primary key in the browser.",
+      "pattern": "^SOYRES-[0-9]{4}$"
+    },
+    "target_group": {
+      "type": "string",
+      "description": "Broad resistance target category such as Nematode, Oomycete, Fungal, Bacterial, Virus, Herbivore/insect, or Overview."
+    },
+    "source_category": {
+      "type": "string",
+      "description": "Source stream for the row, e.g. main review table, supplementary review table, disease-scope row, or supplemental herbivore source."
+    },
+    "source_table": {
+      "type": "string",
+      "description": "Original table or supplemental source bucket from which the row was extracted."
+    },
+    "source_table_title": {
+      "type": "string",
+      "description": "Title or description of the original source table."
+    },
+    "disease_or_pest": {
+      "type": "string",
+      "description": "Disease, pathogen complex, or herbivore target for the resistance entry."
+    },
+    "causal_agent_or_species": {
+      "type": "string",
+      "description": "Causal pathogen, nematode, virus, bacterial species, or herbivore species when available."
+    },
+    "locus_or_allele": {
+      "type": "string",
+      "description": "Reported locus, QTL, gene, allele, or signal name."
+    },
+    "other_name": {
+      "type": "string",
+      "description": "Alternate reported name, synonym, or legacy locus name."
+    },
+    "MLG_chr": {
+      "type": "string",
+      "description": "Original maturity/linkage group and chromosome text as reported or parsed."
+    },
+    "chromosome": {
+      "type": "string",
+      "description": "Parsed chromosome number when available."
+    },
+    "linked_flanking_markers": {
+      "type": "string",
+      "description": "Reported linked or flanking markers."
+    },
+    "marker_position": {
+      "type": "string",
+      "description": "Reported marker position or physical interval. Gmax2.0 is preferred when available."
+    },
+    "assembly_or_coordinate_system": {
+      "type": "string",
+      "description": "Genome assembly or coordinate system for marker positions."
+    },
+    "resistance_spectrum_or_testing_method": {
+      "type": "string",
+      "description": "Race, HG type, isolate, biotype, insect species, testing method, or resistance spectrum details."
+    },
+    "PVE_or_effect": {
+      "type": "string",
+      "description": "Phenotypic variation explained, effect size, or qualitative effect text as reported."
+    },
+    "population_type_size": {
+      "type": "string",
+      "description": "Mapping or screening population type and sample size."
+    },
+    "screening_environment": {
+      "type": "string",
+      "description": "Environment or assay setting, such as greenhouse, field, lab, or multiple environments."
+    },
+    "donor_source": {
+      "type": "string",
+      "description": "Resistant donor parent, plant introduction, cultivar, line, or germplasm source."
+    },
+    "candidate_genes": {
+      "type": "string",
+      "description": "Candidate gene, cloned gene, or functional annotation when reported."
+    },
+    "evidence_status": {
+      "type": "string",
+      "description": "Evidence classification from the collation, including whether rows are review-reported, supplemental, validated, GWAS, or preliminary."
+    },
+    "source_reference": {
+      "type": "string",
+      "description": "Primary citation or source label retained from the extraction."
+    },
+    "source_url_or_doi": {
+      "type": "string",
+      "description": "URL or DOI where available. Use this to create source links in the browser."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional extraction notes, caveats, or interpretive comments."
+    },
+    "row_quality_flag": {
+      "type": "string",
+      "description": "Data-quality indicator from extraction. Treat rows flagged sparse/continuation or multi-line as needing manual verification."
+    },
+    "raw_row_text": {
+      "type": "string",
+      "description": "Raw extracted row text retained for audit and manual correction."
+    },
+    "source_col_01": {
+      "type": "string",
+      "description": "Raw source table column 01; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_02": {
+      "type": "string",
+      "description": "Raw source table column 02; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_03": {
+      "type": "string",
+      "description": "Raw source table column 03; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_04": {
+      "type": "string",
+      "description": "Raw source table column 04; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_05": {
+      "type": "string",
+      "description": "Raw source table column 05; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_06": {
+      "type": "string",
+      "description": "Raw source table column 06; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_07": {
+      "type": "string",
+      "description": "Raw source table column 07; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_08": {
+      "type": "string",
+      "description": "Raw source table column 08; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_09": {
+      "type": "string",
+      "description": "Raw source table column 09; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_10": {
+      "type": "string",
+      "description": "Raw source table column 10; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_11": {
+      "type": "string",
+      "description": "Raw source table column 11; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_12": {
+      "type": "string",
+      "description": "Raw source table column 12; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_13": {
+      "type": "string",
+      "description": "Raw source table column 13; retained to support manual validation of wrapped PDF/DOCX table rows."
+    },
+    "source_col_14": {
+      "type": "string",
+      "description": "Raw source table column 14; retained to support manual validation of wrapped PDF/DOCX table rows."
+    }
+  }
+}

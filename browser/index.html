@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soybean Resistance QTL Browser</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="app-header">
+      <div class="header-copy">
+        <p class="eyebrow">Soybean resistance dataset</p>
+        <h1>QTL, locus, gene, and GWAS browser</h1>
+        <p class="subtitle">
+          Search, filter, review, and export the combined soybean resistance
+          collation across diseases, nematodes, viruses, bacteria, oomycetes,
+          fungi, and herbivores.
+        </p>
+        <div class="meta-row" id="datasetMeta" aria-live="polite"></div>
+      </div>
+      <div class="header-actions">
+        <button id="downloadCsv" type="button">Export filtered CSV</button>
+        <button id="resetFilters" type="button" class="secondary">Reset filters</button>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="dashboard-section">
+        <div class="summary-grid" id="summaryCards" aria-live="polite"></div>
+        <div class="dashboard-grid">
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">Current result set</p>
+                <h2>Quality flags</h2>
+              </div>
+              <p class="panel-note">Rows needing manual validation stay visible.</p>
+            </div>
+            <div class="breakdown-list" id="qualityBreakdown"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">Current result set</p>
+                <h2>Source categories</h2>
+              </div>
+              <p class="panel-note">Review and supplemental sources remain separate.</p>
+            </div>
+            <div class="breakdown-list" id="sourceBreakdown"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">Distribution</p>
+                <h2>Target groups</h2>
+              </div>
+              <p class="panel-note">Counts update with search and facet filters.</p>
+            </div>
+            <div class="breakdown-list" id="targetBreakdown"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-kicker">Top values</p>
+                <h2>Disease or pest</h2>
+              </div>
+              <p class="panel-note">Top 15 values in the current result set.</p>
+            </div>
+            <div class="breakdown-list" id="diseaseBreakdown"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel controls-panel">
+        <div class="controls-header">
+          <div>
+            <p class="panel-kicker">Search and filter</p>
+            <h2>Explore the collation</h2>
+          </div>
+          <p class="panel-note">Global search is case-insensitive and scans every field.</p>
+        </div>
+
+        <label class="search-box">
+          <span>Search all fields</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search locus, marker, donor, disease, DOI, raw row text..."
+            autocomplete="off"
+          />
+        </label>
+
+        <div class="facet-row">
+          <label>
+            <span>Target group</span>
+            <select id="targetGroupFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label>
+            <span>Disease or pest</span>
+            <select id="diseaseFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label>
+            <span>Chromosome</span>
+            <select id="chromosomeFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label>
+            <span>Source category</span>
+            <select id="sourceCategoryFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label>
+            <span>Evidence status</span>
+            <select id="evidenceFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label>
+            <span>Quality flag</span>
+            <select id="qualityFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="active-filters" id="activeFilters" aria-live="polite"></div>
+      </section>
+
+      <section class="table-toolbar" aria-live="polite">
+        <div class="toolbar-copy">
+          <strong id="visibleCount">0</strong>
+          <span id="resultSummary">Loading records...</span>
+        </div>
+        <div class="toolbar-statuses">
+          <span class="status-chip status-chip-warning" id="manualReviewCount">0 need review</span>
+          <span class="status-chip status-chip-info" id="preliminaryCount">0 preliminary evidence</span>
+        </div>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="table-wrap">
+          <table id="dataTable">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel notes-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="panel-kicker">Auditability</p>
+            <h2>Dataset notes</h2>
+          </div>
+          <p class="panel-note">Raw extraction fields remain available in the detail drawer and CSV export.</p>
+        </div>
+        <ul class="note-list" id="qualityNotes"></ul>
+      </section>
+    </main>
+  </div>
+
+  <div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
+  <aside id="detailPanel" class="detail-panel" aria-live="polite" aria-label="Row details">
+    <div class="detail-panel-header">
+      <p class="panel-kicker">Record detail</p>
+      <button id="closePanel" type="button" class="close-button" aria-label="Close details">Close</button>
+    </div>
+    <div id="detailContent"></div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

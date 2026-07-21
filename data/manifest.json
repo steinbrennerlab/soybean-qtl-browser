@@ -1,0 +1,547 @@
+{
+  "dataset_name": "Soybean resistance QTL/locus collation",
+  "generated_utc": "2026-04-28T22:49:02Z",
+  "record_count": 1996,
+  "field_count": 40,
+  "primary_key": "entry_id",
+  "canonical_csv": "data/soybean_resistance_qtl_collation.csv",
+  "json_records": "data/soybean_resistance_qtl_collation.json",
+  "jsonl_records": "data/soybean_resistance_qtl_collation.jsonl",
+  "field_dictionary": "data/field_dictionary.md",
+  "schema": "data/schema.json",
+  "recommended_default_columns": [
+    "entry_id",
+    "target_group",
+    "disease_or_pest",
+    "causal_agent_or_species",
+    "locus_or_allele",
+    "MLG_chr",
+    "chromosome",
+    "linked_flanking_markers",
+    "marker_position",
+    "resistance_spectrum_or_testing_method",
+    "PVE_or_effect",
+    "population_type_size",
+    "screening_environment",
+    "donor_source",
+    "evidence_status",
+    "row_quality_flag",
+    "source_reference"
+  ],
+  "recommended_facets": [
+    "target_group",
+    "disease_or_pest",
+    "chromosome",
+    "source_category",
+    "evidence_status",
+    "row_quality_flag"
+  ],
+  "facet_counts": {
+    "target_group": [
+      {
+        "value": "Fungal",
+        "count": 1034
+      },
+      {
+        "value": "Oomycete",
+        "count": 632
+      },
+      {
+        "value": "Nematode",
+        "count": 137
+      },
+      {
+        "value": "Virus",
+        "count": 108
+      },
+      {
+        "value": "Overview",
+        "count": 38
+      },
+      {
+        "value": "Bacterial",
+        "count": 27
+      },
+      {
+        "value": "Herbivore/insect",
+        "count": 20
+      }
+    ],
+    "source_category": [
+      {
+        "value": "Review main table",
+        "count": 1512
+      },
+      {
+        "value": "Review supplementary table",
+        "count": 426
+      },
+      {
+        "value": "Review disease scope",
+        "count": 38
+      },
+      {
+        "value": "Supplemental herbivore source",
+        "count": 20
+      }
+    ],
+    "source_table": [
+      {
+        "value": "Table 5",
+        "count": 299
+      },
+      {
+        "value": "Table 8",
+        "count": 247
+      },
+      {
+        "value": "Supplementary Table 3",
+        "count": 202
+      },
+      {
+        "value": "Table 6",
+        "count": 169
+      },
+      {
+        "value": "Supplementary Table 1",
+        "count": 134
+      },
+      {
+        "value": "Table 12",
+        "count": 110
+      },
+      {
+        "value": "Table 2",
+        "count": 96
+      },
+      {
+        "value": "Table 11",
+        "count": 90
+      },
+      {
+        "value": "Supplementary Table 2",
+        "count": 90
+      },
+      {
+        "value": "Table 18",
+        "count": 88
+      },
+      {
+        "value": "Table 14",
+        "count": 83
+      },
+      {
+        "value": "Table 9",
+        "count": 69
+      },
+      {
+        "value": "Table 13",
+        "count": 63
+      },
+      {
+        "value": "Table 10",
+        "count": 57
+      },
+      {
+        "value": "Table 1",
+        "count": 38
+      },
+      {
+        "value": "Table 7",
+        "count": 30
+      },
+      {
+        "value": "Table 17",
+        "count": 27
+      },
+      {
+        "value": "Table 4",
+        "count": 21
+      },
+      {
+        "value": "Table 3",
+        "count": 20
+      },
+      {
+        "value": "Table 19",
+        "count": 20
+      },
+      {
+        "value": "Table 16",
+        "count": 17
+      },
+      {
+        "value": "Chang & Hartman 2017 Table 1",
+        "count": 7
+      },
+      {
+        "value": "Table 15",
+        "count": 6
+      },
+      {
+        "value": "Chang & Hartman 2017 literature review",
+        "count": 5
+      },
+      {
+        "value": "Ortega et al. 2016 / prior QTL mapping",
+        "count": 4
+      },
+      {
+        "value": "Jun et al. 2013",
+        "count": 3
+      },
+      {
+        "value": "Graef et al. 2024 SBW slides",
+        "count": 1
+      }
+    ],
+    "disease_or_pest": [
+      {
+        "value": "Phytophthora root and stem rot",
+        "count": 433
+      },
+      {
+        "value": "Sudden death syndrome",
+        "count": 337
+      },
+      {
+        "value": "Sclerotinia stem rot",
+        "count": 292
+      },
+      {
+        "value": "Pythium damping-off and root rot",
+        "count": 169
+      },
+      {
+        "value": "Soybean rust",
+        "count": 110
+      },
+      {
+        "value": "Soybean cyst nematode",
+        "count": 96
+      },
+      {
+        "value": "Soybean mosaic virus",
+        "count": 88
+      },
+      {
+        "value": "Charcoal rot",
+        "count": 83
+      },
+      {
+        "value": "Fusarium wilt/root rot",
+        "count": 69
+      },
+      {
+        "value": "Frogeye leaf spot / Cercospora leaf blight / purple seed stain",
+        "count": 57
+      },
+      {
+        "value": "Stem canker / Phomopsis seed decay",
+        "count": 53
+      },
+      {
+        "value": "Multiple diseases",
+        "count": 38
+      },
+      {
+        "value": "Downy mildew",
+        "count": 30
+      },
+      {
+        "value": "Reniform nematode",
+        "count": 21
+      },
+      {
+        "value": "Southern root-knot nematode",
+        "count": 20
+      },
+      {
+        "value": "Other soybean viruses",
+        "count": 20
+      },
+      {
+        "value": "Rhizoctonia damping-off and root rot",
+        "count": 17
+      },
+      {
+        "value": "Bacterial diseases",
+        "count": 17
+      },
+      {
+        "value": "Soybean aphid",
+        "count": 9
+      },
+      {
+        "value": "Brown stem rot",
+        "count": 6
+      },
+      {
+        "value": "Leaf-chewing insects",
+        "count": 4
+      },
+      {
+        "value": "MLG",
+        "count": 3
+      },
+      {
+        "value": "Diaporthe",
+        "count": 2
+      },
+      {
+        "value": "–",
+        "count": 2
+      },
+      {
+        "value": "name",
+        "count": 2
+      },
+      {
+        "value": "Name",
+        "count": 2
+      },
+      {
+        "value": "Bacterial",
+        "count": 2
+      },
+      {
+        "value": "blight",
+        "count": 2
+      },
+      {
+        "value": "agent",
+        "count": 1
+      },
+      {
+        "value": "longicolla",
+        "count": 1
+      },
+      {
+        "value": "Frogeye",
+        "count": 1
+      },
+      {
+        "value": "Satt486;Rxp17-700;",
+        "count": 1
+      },
+      {
+        "value": "Satt014andSatt372;",
+        "count": 1
+      },
+      {
+        "value": "Mexican bean beetle",
+        "count": 1
+      },
+      {
+        "value": "Potato leafhopper",
+        "count": 1
+      },
+      {
+        "value": "Soybean looper",
+        "count": 1
+      },
+      {
+        "value": "Velvetbean caterpillar",
+        "count": 1
+      },
+      {
+        "value": "Beet armyworm",
+        "count": 1
+      },
+      {
+        "value": "Unspecified chewing insects",
+        "count": 1
+      },
+      {
+        "value": "Soybean gall midge",
+        "count": 1
+      }
+    ],
+    "evidence_status": [
+      {
+        "value": "as reported in review; curated status not independently revalidated",
+        "count": 1512
+      },
+      {
+        "value": "additional locus as reported in supplementary table",
+        "count": 426
+      },
+      {
+        "value": "review scope row",
+        "count": 38
+      },
+      {
+        "value": "GWAS significant SNP",
+        "count": 4
+      },
+      {
+        "value": "no significant SNP reported in this GWAS",
+        "count": 2
+      },
+      {
+        "value": "validated major insect-resistance QTL; pyramiding tested in NILs",
+        "count": 2
+      },
+      {
+        "value": "minor insect-resistance QTL; epistatic with QTL-M",
+        "count": 2
+      },
+      {
+        "value": "major biparental QTL",
+        "count": 2
+      },
+      {
+        "value": "known aphid resistance gene/locus; secondary summary row",
+        "count": 2
+      },
+      {
+        "value": "known aphid resistance QTL/locus; secondary summary row",
+        "count": 2
+      },
+      {
+        "value": "GWAS signal; authors caution preliminary due imbalanced resistant set",
+        "count": 1
+      },
+      {
+        "value": "minor biparental QTL",
+        "count": 1
+      },
+      {
+        "value": "known aphid resistance QTL/loci; secondary summary row",
+        "count": 1
+      },
+      {
+        "value": "preliminary GWAS / grey literature; needs primary publication or SNP table for marker-level use",
+        "count": 1
+      }
+    ],
+    "row_quality_flag": [
+      {
+        "value": "ok_extracted",
+        "count": 749
+      },
+      {
+        "value": "ok_docx_supplement_extract",
+        "count": 426
+      },
+      {
+        "value": "sparse_or_continuation",
+        "count": 369
+      },
+      {
+        "value": "multi_line_extraction",
+        "count": 332
+      },
+      {
+        "value": "sparse_or_continuation;multi_line_extraction",
+        "count": 100
+      },
+      {
+        "value": "manual_preliminary_grey_literature_entry",
+        "count": 1
+      }
+    ],
+    "chromosome": [
+      {
+        "value": "14",
+        "count": 44
+      },
+      {
+        "value": "18",
+        "count": 42
+      },
+      {
+        "value": "3",
+        "count": 38
+      },
+      {
+        "value": "8",
+        "count": 33
+      },
+      {
+        "value": "13",
+        "count": 33
+      },
+      {
+        "value": "19",
+        "count": 33
+      },
+      {
+        "value": "2",
+        "count": 31
+      },
+      {
+        "value": "16",
+        "count": 28
+      },
+      {
+        "value": "17",
+        "count": 28
+      },
+      {
+        "value": "9",
+        "count": 28
+      },
+      {
+        "value": "15",
+        "count": 27
+      },
+      {
+        "value": "11",
+        "count": 25
+      },
+      {
+        "value": "6",
+        "count": 25
+      },
+      {
+        "value": "7",
+        "count": 23
+      },
+      {
+        "value": "1",
+        "count": 21
+      },
+      {
+        "value": "10",
+        "count": 20
+      },
+      {
+        "value": "20",
+        "count": 19
+      },
+      {
+        "value": "4",
+        "count": 18
+      },
+      {
+        "value": "5",
+        "count": 18
+      },
+      {
+        "value": "12",
+        "count": 15
+      }
+    ],
+    "assembly_or_coordinate_system": [
+      {
+        "value": "Gmax2.0 where reported by review; otherwise cM or source assembly as shown",
+        "count": 1550
+      },
+      {
+        "value": "Gmax2.0 where marked a2; Gmax1.01 where marked a1; cM where no bp shown",
+        "count": 426
+      },
+      {
+        "value": "Wm82.a2/Gmax2.0 where listed; otherwise source coordinate system as noted",
+        "count": 20
+      }
+    ]
+  },
+  "quality_notes": [
+    "Rows with row_quality_flag containing sparse_or_continuation or multi_line_extraction should be reviewed before biological interpretation.",
+    "The gall midge row is intentionally retained and flagged as preliminary GWAS / grey literature.",
+    "source_col_01 through source_col_14 preserve raw table columns for auditability.",
+    "Gmax2.0 should be treated as the preferred coordinate system, but some rows retain older or source-specific coordinates when Gmax2.0 was unavailable."
+  ]
+}
